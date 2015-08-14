@@ -12,7 +12,7 @@ module Dom
         i = 1
         while i < total_parts
           class_file = parts[0..i].join('/') + '.js.coffee'
-          class_content = "App.#{parts_camelized[0..i].join('.')} extends App.#{parts_camelized[0..i-1].join('.')}"
+          class_content = "class App.#{parts_camelized[0..i].join('.')} extends App.#{parts_camelized[0..i-1].join('.')}"
           create_file "app/assets/javascripts/#{class_file}", class_content
           i += 1
         end
