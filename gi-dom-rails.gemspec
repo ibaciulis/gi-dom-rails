@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name        = 'gi-dom-rails'
   s.version     = '0.0.1'
   s.summary     = 'Garber-Irish DOM-ready Execution'
-  s.description = 'Garber-Irish DOM-ready Execution'
+  s.description = 'Execute page specific JS by controller path and method name'
   s.author      = 'Irmantas Baciulis'
   s.email       = 'i.baciulis@gmail.com'
   s.homepage    = 'https://github.com/ibaciulis/gi-dom-rails'
