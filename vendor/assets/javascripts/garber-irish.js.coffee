@@ -10,8 +10,8 @@ window.GIDOM =
     parts.push(action)
     parts = (_.str.classify(part) for part in parts)
 
-    klassName = parts.join('.')
-    klass = eval("#{appName}.Pages.#{klassName}")
+    klassName = "#{appName}.Pages.#{parts.join('.')}"
 
-    if klass?
-      new klass
+    try
+      klass = eval("new #{klassName}")
+      klass.init() if klass.init?
