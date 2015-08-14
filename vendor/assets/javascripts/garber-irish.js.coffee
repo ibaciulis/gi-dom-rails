@@ -8,7 +8,7 @@ window.GIDOM =
 
     parts = controller_path.split('/')
     parts.push(action)
-    parts = _.str.classify(part) for part in parts
+    parts = (_.str.classify(part) for part in parts)
 
     klassName = parts.join('.')
     klass = eval("#{appName}.Pages.#{klassName}")
