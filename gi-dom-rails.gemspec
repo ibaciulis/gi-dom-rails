@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.author      = 'Irmantas Baciulis'
   s.email       = 'i.baciulis@gmail.com'
   s.license     = 'MIT'
-  s.files         = `git ls-files`.split("\n")
+  s.files       = `git ls-files`.split("\n")
 
   s.required_ruby_version = '>= 2.0.0'
 
