@@ -18,14 +18,8 @@ module Dom
         end
       end
 
-      def refresh_pages_manifest
-        content = Dir.glob('app/assets/javascripts/pages/**/*.js.coffee').reverse.each_with_object('') do |path, o|
-          path.gsub!(/^app\/assets\/javascripts\//, '')
-          path.gsub!(/.js.coffee$/, '')
-          o << "#= require #{path}\n"
-        end
-
-        File.write('app/assets/javascripts/pages.js.coffee', content)
+      def generate_pages_manifest
+        generate 'dom:manifest:pages'
       end
     end
   end
