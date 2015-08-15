@@ -21,3 +21,15 @@ Require `gi-dom-rails` and generated JS files:
 //= require core/pages
 //= require pages
 ```
+
+# Usage
+For example, you want to generate page specific JS for Account::Orders#index:
+```
+rails generate dom:page account/orders/index
+```
+It will generate these JS files:
+```
+app/assets/javascripts/pages/account.js.coffee
+app/assets/javascripts/pages/account/orders.js.coffee
+app/assets/javascripts/pages/account/orders/index.js.coffee
+```
