@@ -2,7 +2,9 @@
 
 Add gem to Gemfile
 ```
-gem 'gi-dom-rails', github: 'ibaciulis/gi-dom-rails'
+group :development do
+  gem 'gi-dom-rails', github: 'ibaciulis/gi-dom-rails'
+end
 ```
 
 After you install, you need to run the generator:
