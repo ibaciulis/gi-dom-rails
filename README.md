@@ -20,6 +20,15 @@ Require `gi-dom-rails` and generated JS files:
 //= require pages
 ```
 
+Add `controller` and `action` values to body attribute:
+```
+<body data-controller="#{controller.controller_path}" data-action="#{controller.action_name}">
+```
+Or
+```
+= content_tag :body, data: { controller: controller.controller_path, action: controller.action_name }
+```
+
 # Usage
 For example, you want to generate page specific JS for Account::Orders#index:
 ```
