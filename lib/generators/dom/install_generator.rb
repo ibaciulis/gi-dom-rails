@@ -8,7 +8,7 @@ module Dom
       end
 
       def create_pages_manifest
-        create_file 'app/assets/javascripts/pages.js.coffee'
+        create_file 'app/assets/javascripts/pages.coffee'
       end
     end
   end
