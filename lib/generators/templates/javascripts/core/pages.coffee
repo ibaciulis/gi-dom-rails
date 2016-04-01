@@ -1,5 +1,5 @@
 class App.Pages
-  construct: ->
+  constructor: ->
 
   widget: (widgetName) ->
     new App.Widgets[widgetName]
