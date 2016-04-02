@@ -1,7 +1,7 @@
 # Garber-Irish DOM-ready Execution
 # http://viget.com/inspire/extending-paul-irishs-comprehensive-dom-ready-execution
 
-window.GIDOM =
+@GIDOM =
   exec: (appName = 'App') ->
     controller  = document.body.getAttribute('data-controller')
     action      = document.body.getAttribute('data-action')

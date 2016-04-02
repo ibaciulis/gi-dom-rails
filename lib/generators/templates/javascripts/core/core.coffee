@@ -1,4 +1,4 @@
-window.App =
+@App =
   init: ->
     GIDOM.exec()
 
