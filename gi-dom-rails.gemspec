@@ -12,5 +12,5 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.0.0'
 
   s.add_dependency 'underscore-rails', '~> 1.7'
-  s.add_dependency 'underscore-string-rails', '~> 0.0.2'
+  s.add_dependency 'rails-assets-underscore.string'
 end

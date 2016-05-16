@@ -1,6 +1,6 @@
 require 'gi-dom-rails/engine'
 require 'underscore-rails'
-require 'underscore-string-rails'
+require 'rails-assets-underscore.string'
 
 module GIDOMRails
   module Rails

@@ -6,10 +6,10 @@
     controller  = document.body.getAttribute('data-controller')
     action      = document.body.getAttribute('data-action')
 
-    if controller? && action?
+    if controller? and action?
       parts = controller.split('/')
       parts.push(action)
-      parts = (_.str.classify(part) for part in parts)
+      parts = (s.classify(part) for part in parts)
 
       klassName = "#{appName}.Pages.#{parts.join('.')}"
 
