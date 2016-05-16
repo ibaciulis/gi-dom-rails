@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'gi-dom-rails'
-  s.version     = '0.1.0'
+  s.version     = '0.2.0'
   s.summary     = 'Garber-Irish DOM-ready Execution'
   s.description = 'Execute page specific JS by controller path and method name'
   s.author      = 'Irmantas Baciulis'
