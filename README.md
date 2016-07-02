@@ -40,3 +40,14 @@ app/assets/javascripts/pages/account.coffee
 app/assets/javascripts/pages/account/orders.coffee
 app/assets/javascripts/pages/account/orders/index.coffee
 ```
+
+Define custom namespace and path
+```
+rails generate dom:page search_logs/index --namespace Admin --path engines/admin/app/assets/javascripts/admin
+```
+
+Generated files:
+```
+engines/admin/app/assets/javascripts/admin/pages/search_logs.coffee
+engines/admin/app/assets/javascripts/admin/pages/search_logs/index.coffee
+```
